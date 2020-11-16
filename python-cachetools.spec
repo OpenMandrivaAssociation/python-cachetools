@@ -1,7 +1,7 @@
 %define pypi_name cachetools
 
 Name:           python-cachetools
-Version:        4.1.0
+Version:        4.1.1
 Release:        1
 Group:          Development/Python
 Summary:        Extensible memoizing collections and decorators
