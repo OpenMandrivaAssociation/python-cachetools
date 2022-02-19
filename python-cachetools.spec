@@ -1,14 +1,14 @@
 %define pypi_name cachetools
 
 Name:           python-cachetools
-Version:        4.1.1
-Release:        1
+Version:	5.0.0
+Release:	1
 Group:          Development/Python
 Summary:        Extensible memoizing collections and decorators
 
 License:        MIT
 URL:            https://github.com/tkem/cachetools
-Source0:        https://pypi.io/packages/source/c/cachetools/cachetools-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/ad/81/539036a8716b4e0a96f77540194bb1e863a24b8e9bc9ddd74e30f1653df5/cachetools-5.0.0.tar.gz
 BuildArch:      noarch
 
 BuildRequires:  pkgconfig(python)
