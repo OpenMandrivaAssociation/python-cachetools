@@ -1,14 +1,11 @@
-%define module cachetools
-%global mod %(m=%{module}; echo ${m:0:1})
-
 Summary:	Extensible memoizing collections and decorators
-Name:		python-%{module}
+Name:		python-cachetools
 Version:	5.2.0
 Release:	1
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/tkem/cachetools
-Source0:	https://pypi.io/packages/source/%{mod}/%{module}/%{module}-%{version}.tar.gz
+Source0:	https://pypi.io/packages/source/c/cachetools/cachetools-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python3dist(pip)
@@ -25,13 +22,13 @@ function decorator.
 %files
 %doc README.rst
 %license LICENSE
-%{py_puresitedir}/%{module}
-%{py_puresitedir}/%{module}-%{version}.*-info
+%{py_puresitedir}/cachetools
+%{py_puresitedir}/cachetools-%{version}.*-info
 
 #--------------------------------------------------------------------
 
 %prep
-%autosetup -n %{module}-%{version}
+%autosetup -n cachetools-%{version}
 
 # Remove bundled egg-info
 rm -rf %{pypi_name}.egg-info
