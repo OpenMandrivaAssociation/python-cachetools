@@ -26,7 +26,7 @@ function decorator.
 %doc README.rst
 %license LICENSE
 %{py_puresitedir}/%{module}
-%{py_puresitedir}/%{module}-%{version}-py%{py_ver}.*-info
+%{py_puresitedir}/%{module}-%{version}.*-info
 
 #--------------------------------------------------------------------
 
