@@ -11,7 +11,9 @@ URL:		https://github.com/tkem/cachetools
 Source0:	https://pypi.io/packages/source/%{mod}/%{module}/%{module}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python3dist(pip)
 BuildRequires:	python3dist(setuptools)
+BuildRequires:	python3dist(wheel)
 
 BuildArch:	noarch
 
