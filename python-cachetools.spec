@@ -1,6 +1,6 @@
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	5.2.0
+Version:	5.2.1
 Release:	1
 Group:		Development/Python
 License:	MIT
@@ -23,7 +23,7 @@ function decorator.
 %doc README.rst
 %license LICENSE
 %{py_puresitedir}/cachetools
-%{py_puresitedir}/cachetools-%{version}.*-info
+%{py_puresitedir}/cachetools-*.*-info
 
 #--------------------------------------------------------------------
 
