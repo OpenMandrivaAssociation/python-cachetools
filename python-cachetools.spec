@@ -1,7 +1,7 @@
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
 Version:	5.3.0
-Release:	1
+Release:	2
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/tkem/cachetools
