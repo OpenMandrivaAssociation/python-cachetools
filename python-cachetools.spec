@@ -2,12 +2,12 @@
 
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	6.2.4
+Version:	6.2.5
 Release:	1
 Group:		Development/Python
 License:	MIT
 URL:		https://github.com/tkem/cachetools
-Source0:	https://pypi.io/packages/source/c/%{module}/%{module}-%{version}.tar.gz
+Source0:	https://pypi.io/packages/source/c/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 BuildSystem:	python
 BuildArch:	noarch
 
