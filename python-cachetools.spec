@@ -2,7 +2,7 @@
 
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	6.2.5
+Version:	6.2.6
 Release:	1
 Group:		Development/Python
 License:	MIT
@@ -21,19 +21,11 @@ This module provides various memoizing collections and decorators,
 including a variant of the Python 3 Standard Library `@lru_cache`_
 function decorator.
 
-%prep
-%autosetup -n %{module}-%{version}
-
+%prep -a
 # Remove bundled egg-info
 rm -rf src/%{module}.egg-info
 
 find -name '*.py' | xargs sed -i '1s|^#!python|#!%{__python}|'
-
-%build
-%py_build
-
-%install
-%py_install
 
 %files
 %doc README.rst
