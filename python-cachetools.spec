@@ -2,7 +2,7 @@
 
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	6.2.6
+Version:	7.0.0
 Release:	1
 Group:		Development/Python
 License:	MIT
@@ -11,7 +11,7 @@ Source0:	https://pypi.io/packages/source/c/%{module}/%{module}-%{version}.tar.gz
 BuildSystem:	python
 BuildArch:	noarch
 
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3) >= 3.10
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
