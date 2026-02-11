@@ -1,8 +1,9 @@
 %define module cachetools
+%bcond tests 1
 
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	7.0.0
+Version:	7.0.1
 Release:	1
 Group:		Development/Python
 License:	MIT
@@ -25,7 +26,14 @@ function decorator.
 # Remove bundled egg-info
 rm -rf src/%{module}.egg-info
 
-find -name '*.py' | xargs sed -i '1s|^#!python|#!%{__python}|'
+find -name '*.py' | xargs sed -i '1s|^#!python|#!%{__python3}|'
+
+%if %{with tests}
+%check
+export CI=true
+export PYTHONPATH="%{buildroot}%{python_sitelib}:${PWD}"
+%{__python3} -m unittest
+%endif
 
 %files
 %doc README.rst
