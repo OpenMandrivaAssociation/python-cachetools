@@ -3,7 +3,7 @@
 
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	7.0.1
+Version:	7.0.3
 Release:	1
 Group:		Development/Python
 License:	MIT
