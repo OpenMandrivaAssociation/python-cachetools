@@ -3,16 +3,16 @@
 
 Summary:	Extensible memoizing collections and decorators
 Name:		python-cachetools
-Version:	7.0.6
+Version:	7.1.0
 Release:	1
-Group:		Development/Python
 License:	MIT
+Group:		Development/Python
 URL:		https://github.com/tkem/cachetools
-Source0:	https://pypi.io/packages/source/c/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
+Source0:	%{URL}/archive/v%{version}/%{name}-%{version}.tar.gz
+
 BuildSystem:	python
 BuildArch:	noarch
-
-BuildRequires:	pkgconfig(python3) >= 3.10
+BuildRequires:	pkgconfig(python)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
@@ -26,7 +26,7 @@ function decorator.
 # Remove bundled egg-info
 rm -rf src/%{module}.egg-info
 
-find -name '*.py' | xargs sed -i '1s|^#!python|#!%{__python3}|'
+find -name '*.py' | xargs sed -i '1s|^#!python|#!%{__python}|'
 
 %if %{with tests}
 %check
